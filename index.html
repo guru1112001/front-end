@@ -1,164 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Bootstrap CSS -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+  
+  <!-- Bootstrap CSS -->
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
-    <title>Document</title>
-    <style>
-      * {
-        padding: 0px;
-        margin: 0px;
-      }
 
-      .offer {
-        display: flex;
-        font-size: 18px;
-        color: #550b61;
-        justify-content: center;
-        padding: 10px;
-      }
+  <title>Document</title>
+  <style>
 
-      .containers {
-        display: flex;
-        justify-content: space-between;
-        font-family: serif;
-        padding: 10px 7px 11px 22px;
-        background-color: transparent;
-        align-items: center;
-        border: 1px solid black;
-      }
-
-      .logo {
-        font-size: 30px;
-        /* border-right: 1px solid #550b61;
-            padding: 50px 10px; */
-      }
-
-      .logo a {
-        text-decoration: none;
-        color: #9227b3;
-      }
-
-      .links {
-        display: flex;
-        gap: 70px;
-        margin-left: auto;
-      }
-
-      .links a {
-        text-decoration: none;
-        color: #9227b3;
-        padding: 10px;
-        padding-top: 16px;
-        border: 1px solid transparent;
-        border-radius: 2cm;
-      }
-
-      .links a:hover {
-        color: rgb(209, 192, 224);
-        background-color: rgb(167, 81, 198);
-      }
-
-      .dropdown {
-        position: relative;
-        display: flex;
-      }
-
-      .dd-content {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        width: 100px;
-        border: 1px solid rgb(0, 0, 0);
-        visibility: hidden;
-        box-shadow: 5px 10px;
-        top: 40px;
-        padding: 20px;
-        background-color: #ffffff;
-      }
-
-      .dd-content a {
-        color: #550b61;
-        text-decoration: none;
-        display: flex;
-        justify-items: center;
-      }
-
-      .dd-content a:hover {
-        background-color: rgb(174, 87, 228);
-      }
-
-      .dropdown:hover .dd-content {
-        display: flex;
-        visibility: visible;
-        transition: cubic-bezier(1, 0, 0, 1);
-      }
-
-      .order-btn {
-        display: flex;
-        border: 1px solid black;
-        padding-top: 5px;
-        margin-left: 40px;
-        margin-right: 20px;
-        border-radius: 2cm;
-        background-color: #8614c4;
-      }
-      .order-btn a {
-        padding: 0px 10px 5px;
-        text-decoration: none;
-        color: #ffffff;
-      }
-      .order-btn:hover {
-        background-color: #9227b3;
-        /* color: ; */
-      }
-      .order-btn a:hover {
-        color: #550b61;
-      }
+    *{
+      padding: 0px;
+      margin:0px;
+      font-family: 'Raleway', sans-serif;
+    }
+    .header{
+      min-height: 100vh;
+      width: 100%;
+      background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)) , url("https://images.pexels.com/photos/835741/pexels-photo-835741.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+      background-size: cover;
+      position: relative;
+      
+    }
+    nav{
+      display: flex;
+      padding: 0px 80px 20px 20px;
+      justify-content: space-between;
+      align-items: center;
+      
+    }
+    nav img{
+      width: 150px;
+      height: 150px;
+    }
+    .nav-link{
+      flex: 1;
+      text-align: right;
+    }
+    .nav-link a{
+      text-decoration: none;
+      color: white;
+      display: inline-block;
+      padding: 8px 35px;
+      position: relative;
+      font-size: 13px;
+    }
     </style>
-  </head>
+  
+</head>
 
-  <body>
-    <span class="offer">Get 15% OFF on the first order! Use code SIGNUP15</span>
-    <div class="containers">
-      <div class="logo"><a href="#">LOGO</a></div>
-      <div class="links">
-        <a href="#">ABOUT US</a>
+<body>
+  <!-- <span class="offer">Get 15% OFF on the first order! Use code SIGNUP15</span> -->
+  <section class="header">
+    
+    <nav>
+      <a href="#"><img  src="Mohammed_Mounir_-_Cake_O_clock_-_World_Brand_Design_Society-removebg-preview.png" ></a>
+    
+      <div class="nav-link">
+        <a href="#">HOME</a>
+        <a href="#">PRODUCT</a>
+        <a href="#">ABOUT-US</a>
+        <a href="#">CONTACT-US</a>
+        <a href="#">CUSTOM-ORDER</a>
+        
 
-        <div class="dropdown">
-          <a class="dd-link" href="#">PRODUCTS</a>
 
-          <div class="dd-content">
-            <a href="#">cake</a>
-            <a href="#">cup cake</a>
-            <a href="#">browine</a>
-            <a href="#">chocolate</a>
-            <a href="#">hamper</a>
-          </div>
-        </div>
 
-        <a href="#">CUSTOM ORDER</a>
-        <a href="#">CONTACT US </a>
+
       </div>
-      <div class="order-btn">
-        <a href="#"> ORDER ONLINE</a>
-      </div>
-      <div class="search-btn">
-        <input type="text" placeholder="search">
-      </div>
-    </div>
-    <!-- <div class="images">
-            <img src="" alt="">
-        </div> -->
+    </nav>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  </section>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

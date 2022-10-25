@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css" integrity="sha384-z4tVnCr80ZcL0iufVdGQSUzNvJsKjEtqYZjiQrrYKlpGow+btDHDfQWkFjoaz/Zr" crossorigin="anonymous">
   
   <!-- Bootstrap CSS -->
   <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -20,6 +21,7 @@
       padding: 0px;
       margin:0px;
       font-family: 'Raleway', sans-serif;
+      box-sizing: border-box;
     }
     .header{
       min-height: 100vh;
@@ -52,6 +54,100 @@
       position: relative;
       font-size: 13px;
     }
+    .nav-link a::after{
+      content: "";
+      width: 0%;
+      height: 2px;
+      display: block;
+      margin: auto;
+      background-color: #cc6e66;
+      transition: 0.5s;
+    }
+    .nav-link a:hover::after{
+      width: 100%;
+    }
+    .text-box  {
+      padding-left: 80px;
+      position: absolute;
+      text-align: left;
+      color: white;
+
+    }
+    .text-box h1 {
+    font-size: 50px;  
+    
+    }
+
+    .line-heading ::before{
+      content: "";
+    width: 80px;
+    height: 3px;
+    background: linear-gradient( #cc6e66 , #cc6e66);
+    position: absolute;
+    left: -63px;
+    top: 28px;
+   }
+   .text-box p{
+    font-weight: lighter;
+    color: #ff8585;
+    margin: 18px 0px 56px 0px;
+   }
+   .line-heading{
+    padding-left: 27px;
+      position: relative;
+      text-align: left;
+      color: white;
+    }
+   .text-box a{
+    display: inline-block;
+    text-decoration: none;
+    color: #ff8585;
+    border: 1px solid black;
+    padding: 10px 10px 10px 10px;
+    background-color: white;
+    font-weight: bold;
+    border-radius: 50px;
+   }
+   .text-box a:hover{
+    background-color: #ff8585;
+    color: white;
+    transition: 0.5s;
+
+   }
+
+   .our-information{
+    text-align: center;
+    padding-top: 100px;
+    margin: auto;
+    /* width: 80%; */
+   }
+   .info h1{
+    font-size: 30px;
+    font-weight: bold;
+
+   }
+   .info p{
+    color: #514e4e;
+    font-size: 15px;
+    font-weight: 200;
+    line-height: 30px;
+    padding: 19px;
+}
+   .row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+    
+  }
+  .row-2{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+    
+  }
+   
+
+  
     </style>
   
 </head>
@@ -69,13 +165,58 @@
         <a href="#">ABOUT-US</a>
         <a href="#">CONTACT-US</a>
         <a href="#">CUSTOM-ORDER</a>
-        
-
-
-
-
       </div>
     </nav>
+    <div class="text-box">
+      <h1>Delicious </h1> <br>
+      <div class="line-heading">
+        <h1 >CAKES FOR YOU</h1>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Perferendis, maiores nesciunt? <br> Iste voluptatum mollitia cum laboriosam.</p>
+      <a href="#">ORDER NOW </a>
+    </div>
+    
+
+  </section>
+  <section class="our-information">
+    <div class="info">
+
+      <h1>Food of The Gods, Freshly Baked!</h1>
+      <p>Since 2004, we've been serving our guests the best quality treats, traditionally <br>made and presented with care. </p>
+    </div>
+    <div class="row">
+      <div class="col">
+
+        <h3>AUTHENTIC RECIPES</h3>
+        <p>Our products are based on <br> traditional home-style recipes, using <br> fresh ingredients and no <br> preservatives or chemicals.
+        </p>
+      </div>
+        <div class="image-container">
+
+        </div>
+      
+      <div class="col-2">
+
+        <h3>BAKED WITH LOVE</h3>
+        <p>Our passion for baking is poured into  <br> every recipe, serving smiles on a <br>  plate everyday.</p>
+      </div>
+      
+    </div>
+    <div class="row-2">
+      <div class="row-2-col">
+
+        <h3>HONESTLY PRICED</h3>
+        <p>Our products are based on <br> traditional home-style recipes, using <br> fresh ingredients and no <br> preservatives or chemicals.
+        </p>
+      </div>
+      <div class="row-2-col-2">
+        
+        <h3>COMMITTED TO QUALITY</h3>
+        <p>From our ingredients to our<br> kitchen operations & guest services, <br>  we always prioritize quality.</p>
+      </div>
+    </div>
+
+
 
   </section>
 
@@ -85,4 +226,4 @@
     crossorigin="anonymous"></script>
 </body>
 
-</html>
+</html> 

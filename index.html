@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css"
     integrity="sha384-z4tVnCr80ZcL0iufVdGQSUzNvJsKjEtqYZjiQrrYKlpGow+btDHDfQWkFjoaz/Zr" crossorigin="anonymous">
-
+  <script src="https://kit.fontawesome.com/95f88e12b4.js"></script>
   <!-- Bootstrap CSS -->
   <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
@@ -22,7 +22,7 @@
       margin: 0px;
       font-family: 'Raleway', sans-serif;
       box-sizing: border-box;
-      /* overflow: hidden; */
+
     }
 
     .header {
@@ -434,7 +434,8 @@
       position: relative;
       display: inline-block;
     }
-    .s-text-box a{
+
+    .s-text-box a {
       text-decoration: none;
       color: #ff8585;
       border: 1px solid black;
@@ -443,12 +444,77 @@
       font-weight: bold;
       border-radius: 50px;
     }
-    .s-text-box a:hover{
+
+    .s-text-box a:hover {
       background-color: #ff8585;
       color: white;
       transition: 0.5s;
 
     }
+
+    footer {
+      padding: 100px 0 30px;
+      background: linear-gradient(to right, #ff8585, #ff8585);
+      color: #fff;
+      /* bottom: 0;  */
+      position: absolute;
+      line-height: 20px;
+      width: 100%;
+    }
+
+    .f-row {
+      width: 85%;
+      display: flex;
+      align-items: flex-start;
+      /* justify-content: space-between; */
+      /* justify-content:flex-end; */
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      width: 175px;
+      position: absolute;
+      top: 2em;
+
+    }
+
+    .f-col {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 20%;
+      /* justify-content: space-between; */
+      justify-content: center;
+      padding: 10px;
+    }
+
+    .f-col a {
+      text-decoration: none;
+      padding: 10px 5px 10px;
+      color: #fff;
+    }
+
+    .f-col p {
+      cursor: pointer;
+      padding: 0px 0px 0px 0px;
+    }
+
+    .fa-solid,.fas {
+      padding-right: 10px;
+       }
+       
+
+    /* .f-col a::after{
+      content: "";
+      width: 0%;
+      height: 1px;
+      margin: auto;
+      display: block;
+      background-color: #fff;
+      transition: 0.5s;
+    }
+    .f-col a:hover::after{
+      width:100%;
+    } */
   </style>
 
 </head>
@@ -607,14 +673,33 @@
     <div class="s-text-box">
       <h1>Tea-Time Delights</h1>
       <p>Pick the perfect companion for your tea (or coffee!) <br> from a range of tea cakes & more.</p>
-      
-        <a href="#">order now</a>
-      
+
+      <a href="#">order now</a>
+
     </div>
     <div class="s-img">
       <img src="home-gif-theo-compressed_38830810-bcce-4f4b-8770-e6d540f8bea2.webp">
     </div>
   </section>
+  <footer>
+    <div class="f-row">
+      <div class="f-col">
+        <img src="Mohammed_Mounir_-_Cake_O_clock_-_World_Brand_Design_Society-removebg-preview.png" class="logo">
+      </div>
+      <div class="f-col">
+        <a href="#">Our story</a>
+        <a href="#">Our product</a>
+        <a href="#">Custom-order</a>
+        <a href="#">Nutritional-info</a>
+      </div>
+      <div class="f-col">
+        <!-- <i class="fa-sharp fa-solid fa-phone"></i> -->
+        <p> <i class="fa-sharp fa-solid fa-phone"></i>+12-34567890</p>
+      </div>
+
+    </div>
+
+  </footer>
 
 
 
